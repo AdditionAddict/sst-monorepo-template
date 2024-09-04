@@ -1,8 +1,8 @@
 {
-  "name": "@monorepo-template/scripts",
+  "name": "@adhd-lifestyle-pro/scripts",
   "version": "0.0.0",
   "dependencies": {
-    "@monorepo-template/core": "*",
+    "@adhd-lifestyle-pro/core": "workspace:*",
     "sst": "*"
   },
   "scripts": {
