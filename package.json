@@ -4,9 +4,14 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {},
+  "prettier": "./prettier.mjs",
+  "scripts": {
+    "format:check": "prettier --check .",
+    "format": "prettier --write ."
+  },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
+    "prettier": "^3.3.3",
     "typescript": "5.3.3"
   },
   "dependencies": {

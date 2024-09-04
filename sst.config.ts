@@ -3,17 +3,17 @@
 export default $config({
   app(input) {
     return {
-      name: "adhd-lifestyle-pro",
-      removal: input?.stage === "production" ? "retain" : "remove",
-      home: "aws",
-    };
+      name: 'adhd-lifestyle-pro',
+      removal: input?.stage === 'production' ? 'retain' : 'remove',
+      home: 'aws',
+    }
   },
   async run() {
-    await import("./infra/storage");
-    const api = await import("./infra/api");
+    await import('./infra/storage')
+    const api = await import('./infra/api')
 
     return {
       api: api.myApi.url,
-    };
+    }
   },
-});
+})
